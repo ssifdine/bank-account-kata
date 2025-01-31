@@ -6,7 +6,10 @@ public class Clock {
 
     private LocalDate currentDate = LocalDate.of(2012, 1, 10);
 
-
+    /**
+     *
+     * @return
+     */
     public LocalDate today(){
         // Simulate date progression for the test scenario
         LocalDate date = currentDate;

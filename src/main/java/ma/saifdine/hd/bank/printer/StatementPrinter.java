@@ -7,6 +7,10 @@ import java.util.List;
 public class StatementPrinter {
     private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
+    /**
+     *
+     * @param transactions
+     */
     public void printStatement(List<Transaction> transactions) {
         StringBuilder output = new StringBuilder();
         output.append("Date       ||  Amount    || Balance \n");

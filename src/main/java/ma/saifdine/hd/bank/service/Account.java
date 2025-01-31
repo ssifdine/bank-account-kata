@@ -14,6 +14,12 @@ public class Account implements AccountService {
     private int balance = 0;                                 // Solde du compte
     private final Clock clock;
 
+    /**
+     *
+     * @param transactionRepository
+     * @param statementPrinter
+     * @param clock
+     */
     public Account(TransactionRepository transactionRepository, StatementPrinter statementPrinter , Clock clock) {
         this.transactionRepository = transactionRepository;
         this.statementPrinter = statementPrinter;
@@ -48,6 +54,10 @@ public class Account implements AccountService {
         statementPrinter.printStatement(transactionRepository.getAllTransactions());
     }
 
+    /**
+     *
+     * @return
+     */
     public int getBalance() {
         return balance;
     }

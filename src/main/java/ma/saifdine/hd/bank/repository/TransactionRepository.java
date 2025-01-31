@@ -10,10 +10,18 @@ public class TransactionRepository {
 
     private final List<Transaction> transactions = new ArrayList<>();  // Liste pour stocker les transactions
 
+    /**
+     *
+     * @param transaction
+     */
     public void addTransaction(Transaction transaction) {
         transactions.add(transaction);  // Ajoute une transaction à la liste
     }
 
+    /**
+     *
+     * @return
+     */
     public List<Transaction> getAllTransactions() {
         List<Transaction> result = new ArrayList<>(transactions);
 //        Collections.reverse(result);

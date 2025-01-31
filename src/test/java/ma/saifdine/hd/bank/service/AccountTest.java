@@ -69,7 +69,7 @@ public class AccountTest {
             String expectedOutput = "Date       ||  Amount    || Balance \n" +
                                     "14/01/2012 ||  -500      || 2500\n" +
                                     "13/01/2012 ||  2000      || 3000\n" +
-                                    "10/01/2012 ||  1000      || 1000\n";
+                                    "10/01/2012 ||  1000      || 1000";
 
             assertEquals(expectedOutput, outContent.toString());
         } finally {

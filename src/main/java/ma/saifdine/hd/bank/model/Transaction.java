@@ -8,6 +8,12 @@ public class Transaction {
     private final int amount;     // Montant de la transaction
     private final int balance;    // Solde apres la transaction
 
+    /**
+     *
+     * @param date
+     * @param amount
+     * @param balance
+     */
     public Transaction(LocalDate date, int amount, int balance) {
         this.date = date;
         this.amount = amount;
